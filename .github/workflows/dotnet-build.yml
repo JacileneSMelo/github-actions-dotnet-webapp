@@ -1,0 +1,13 @@
+# Nome do workflow (só para organização)
+name: Meu Primeiro Workflow
+
+# Quando o workflow deve rodar
+on: [push]
+
+# O que ele vai fazer
+jobs:
+  exemplo:
+    runs-on: ubuntu-latest  # ambiente onde vai rodar (Linux)
+    steps:
+      - name: Mostra mensagem no terminal
+        run: echo "Olá, GitHub Actions está funcionando!"
